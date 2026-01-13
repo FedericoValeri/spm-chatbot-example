@@ -24,7 +24,7 @@ export const chatService = {
     conversationId: string
   ): Promise<ChatResponse> {
     const response = await llmClient.generateText({
-      model: "qwen2.5:1.5b",
+      model: "qwen3:0.6b",
       prompt: prompt,
       instructions: instructions,
       temperature: 0.2,
